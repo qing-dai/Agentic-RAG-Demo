@@ -65,10 +65,10 @@ AGENTIC-RAG-DEMO/
 │     ├─ main.py                # local runner for the graph
 │     └─ server.py              # FastAPI app (/, /chat)
 ├─ data/
-│  ├─ newsapi.json              # source events
+│  ├─ local.json              # source events
 │  └─ vector_store/             # FAISS artifacts
-│     ├─ events.faiss
-│     └─ events_fused.json
+│     ├─ ****.faiss
+│     └─ ***_fused.json
 ├─ workflow_graph.png           # LangGraph diagram
 ├─ .env.example
 ├─ .gitignore
