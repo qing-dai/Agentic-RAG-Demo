@@ -13,8 +13,7 @@ __pycache__/
 # OS
 .DS_Store
 
-# Ignore all PDF files
+# Ignore all files related to data
 *.pdf
-
-# Ignore all JSON files
 *.json
+*.faiss
