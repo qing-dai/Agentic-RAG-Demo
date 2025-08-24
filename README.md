@@ -11,6 +11,24 @@ The system is built with:
 - **yfinance** → live financial data
 - **HTML/CSS/JS frontend** → simple chat UI (WhatsApp-style)
 
+---
+
+## LangGraph Workflow
+
+![Workflow Graph](agent/workflow_graph.png)
+
+**Flow Explanation:**
+
+1. **Start** → `query_evaluate` node  
+   - Decide whether the question is about a ticker price.  
+2. If **finance query** →  
+   - `extract_ticker` → `yahoo_search` → `generate`  
+3. If **knowledge query** →  
+   - `retrieve` → `evaluate_documents` → `generate`  
+4. End → returns answer
+
+---
+
 ## Features
 
 - Retrieval from local JSON dataset of geopolitical/supply chain events  
@@ -56,22 +74,6 @@ AGENTIC-RAG-DEMO/
 ├─ .gitignore
 └─ README.md
 ```
-
----
-
-## LangGraph Workflow
-
-![Workflow Graph](workflow_graph.png)
-
-**Flow Explanation:**
-
-1. **Start** → `query_evaluate` node  
-   - Decide whether the question is about a ticker price.  
-2. If **finance query** →  
-   - `extract_ticker` → `yahoo_search` → `generate`  
-3. If **knowledge query** →  
-   - `retrieve` → `evaluate_documents` → `generate`  
-4. End → returns answer
 
 ---
 
