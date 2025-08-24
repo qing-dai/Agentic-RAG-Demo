@@ -72,6 +72,7 @@ AGENTIC-RAG-DEMO/
 ├─ workflow_graph.png           # LangGraph diagram
 ├─ .env.example
 ├─ .gitignore
+├─ requirements.txt
 └─ README.md
 ```
 
