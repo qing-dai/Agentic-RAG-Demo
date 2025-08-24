@@ -5,7 +5,7 @@ def extract_ticker(state):
     extractor = FinanceQueryExtractor()
     ticker = extractor.extract(question)
     if ticker:
-        print(f"---EXTRACTED TICKER: {ticker}---")
+        print(f"---EXTRACTED TICKER: ---")
         return {"question": question, "documents": ticker}
     else:
         print("---NO TICKER FOUND---")

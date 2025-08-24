@@ -15,7 +15,6 @@ SOURCE_PATH = "/Users/rosydai/Desktop/intern/Agentic-RAG-Demo/newsapi.json"
 META_PATH = "/Users/rosydai/Desktop/intern/Agentic-RAG-Demo/agent/data/vector_store/events_fused.json"
 INDEX_PATH  = "/Users/rosydai/Desktop/intern/Agentic-RAG-Demo/agent/data/vector_store/events.faiss"
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def retrieve_docs(query: str, k: int = 10):
     index = faiss.read_index(INDEX_PATH)
