@@ -65,11 +65,13 @@ AGENTIC-RAG-DEMO/
 │     ├─ main.py                # local runner for the graph
 │     └─ server.py              # FastAPI app (/, /chat)
 ├─ data/
-│  ├─ local.json              # source events
+│  ├─ local.json                # source events
 │  └─ vector_store/             # FAISS artifacts
 │     ├─ ****.faiss
 │     └─ ***_fused.json
 ├─ workflow_graph.png           # LangGraph diagram
+├─ scripts/
+│   ├─ build_knowledge_base.py  # build vector store
 ├─ .env.example
 ├─ .gitignore
 ├─ requirements.txt
