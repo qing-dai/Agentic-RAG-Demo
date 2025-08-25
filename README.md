@@ -28,6 +28,11 @@ The system is built with:
 4. End → returns answer
 
 ---
+## Architecture Overview Diagram
+
+![Architecture Overview Diagram](agent/Component_Diagram.png)
+
+---
 
 ## Features
 
