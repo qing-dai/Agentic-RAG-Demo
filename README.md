@@ -1,4 +1,4 @@
-# Agentic RAG Demo
+# Agentic RAG Chatbot Demo
 
 A demo chatbot that combines **Retrieval-Augmented Generation (RAG)** with **agentic decision-making**.  
 It answers questions about a local dataset, and can also query Yahoo Finance for real-time commodity and index prices.  
